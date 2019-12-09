@@ -1,0 +1,640 @@
+/*---General---*/
+body {
+    margin: 0px;
+    position: absolute;
+    background-color: #f26524;
+    overflow-x: hidden
+}
+
+h1 {
+    margin: 0 0 0 0;
+    font-family: 'Boogaloo', cursive;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+#time {
+    font-family: 'Boogaloo', cursive;
+    margin: 0;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2% 3% 0% 1%;
+    background-color: #fce0d3;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+
+li {
+    list-style: circle;
+    margin-bottom: 1%
+}
+
+#information {
+    font-size: 15px;
+    font-family: 'Assistant', sans-serif;
+    width: 100%;
+    color: #C34716;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+/*---Header---*/
+header {
+    font-size: 10vw;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    line-height: 9vw;
+    z-index: 2;
+    color: #ffffff;
+    padding: 2px 0;
+}
+
+#banner {
+    background-image: url(Media/Photos/fall_banner_purple-01.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+
+#banner2 {
+    background-image: url(Media/Photos/fall_banner_purple_2-01.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+
+#banner,
+#background {
+    width: 100vw;
+    position: relative;
+    margin: 0;
+}
+
+#logo {
+    background-image: url(Media/Photos/fall_banner_purple-02.png);
+    background-size: cover;
+    margin: 0px 40px;
+    position: static;
+    width: 15%;
+}
+
+
+/*---Nav & Dropdowns---*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #C34716;
+    align-items: center;
+    padding-right: 1.5%;
+}
+
+.menu {
+    font-family: 'Boogaloo', cursive;
+    padding: 15px;
+    background-color: #C34716;
+    width: 25%;
+    text-align: center;
+}
+
+
+
+.dropdown {
+
+    position: relative;
+    background-color: #f26524;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.dropdown a {
+    color: white;
+    font-size: 100%;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    line-height: 25px;
+    background-color: transparent;
+}
+
+.menu:hover {
+    background-color: #f58450;
+}
+
+.dropdown a:hover {
+    color: white;
+    font-size: 100%;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    background-color: #f58450;
+}
+
+/*---Dropdown CSS from w3schools---*/
+
+.menu .icon {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f26524;
+    line-height: 45px;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 65px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 35px;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f58450
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: #f26524;
+}
+
+
+/*---Carousel---*/
+
+
+#background {
+    z-index: 0;
+    height: 45vw;
+}
+
+#background2 {
+    z-index: 0;
+    height: 25vw;
+    width: 70%;
+    background-color: #189395;
+    margin-bottom: 2%;
+}
+
+.mobileLeaf {
+    display: none;
+}
+
+#SlideShow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #189395;
+}
+
+#SlideShow2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #189395;
+    width: 145%;
+
+}
+
+#Carousel,
+#CarouselImage {
+    position: relative;
+    padding-right: 17px;
+}
+
+.CarouselImage {
+    height: 45vw;
+}
+
+.CarouselImage2 {
+    height: 25vw;
+
+}
+
+#Carousel {
+    width: 10vw;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#testimony {
+    font-size: 25px;
+    background-color: #C34716;
+    z-index: 5;
+    text-align: center;
+    color: white;
+    padding: 25px 57px 25px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#button {
+    background-color: #189395;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 40px;
+    font-family: 'Boogaloo', cursive;
+    margin: 20px 0 0 0;
+}
+
+#button:hover {
+    background-color: #ffffff;
+    color: #189395;
+}
+
+/* SIDEBAR*/
+#sidebar {
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+    background-color: #441D5F;
+    color: white;
+    padding: 2% 2%;
+    width: 100%;
+    float: left;
+    height: auto;
+    margin-right: 2%;
+}
+
+#sidebarTestimony {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15%;
+    background-color: #c7bbcf;
+    padding: 3%;
+    color: #441D5F;
+
+}
+
+#dropquote {
+    float: left;
+    width: 15%;
+    margin: 0 5%;
+}
+
+#sidebarbutton {
+    background-color: #C34716;
+    font-size: 35px;
+    color: white;
+    border-radius: 40px;
+    font-family: 'Boogaloo', cursive;
+    padding: 5%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#sidebarbutton:hover {
+    background-color: white;
+    font-size: 35px;
+    color: #C34716;
+    border-radius: 40px;
+    font-family: 'Boogaloo', cursive;
+    padding: 5%;
+}
+
+#sidebarh1 {
+    margin-top: 10%;
+    font-family: 'Boogaloo', cursive;
+    font-size: 35px;
+}
+
+
+.contactinformation {
+    z-index: 10;
+    color: white;
+    font-size: 10pt;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    text-align: center;
+}
+
+.contactinfo2 {
+    margin-top: 0.625rem;
+}
+
+.contactinformation,
+.contactinfo2 {
+    font-family: 'Assistant', sans-serif;
+    padding-right: 17px;
+}
+
+@media screen and (max-width: 1040px) {
+    .menu {
+        height: 100px;
+        padding: auto;
+    }
+
+    .dropdown-content {
+        top: 100px;
+    }
+
+    #logo {
+        background-image: url(Media/Photos/ArtSoul_Logo_single-01.png);
+        width: 17%;
+        margin: 1% 5%;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .menu {
+        display: none;
+    }
+
+    /*    .menu a.icon {
+        float: right;
+        display: block;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+.menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }*/
+
+    .dropdown-content {
+        top: 100px;
+    }
+    
+    p {
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+    #information {
+        width: 45%;
+            margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    
+    #dropquote {
+        width: 10%;
+        padding: 0 1%;
+    }
+
+    #sidebarbutton {
+        background-color: #C34716;
+        font-size: 25px;
+        color: white;
+        border-radius: 40px;
+        font-family: 'Boogaloo', cursive;
+        padding: 2%;
+        margin: 2% 0 0 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #sidebarbutton:hover {
+        background-color: white;
+        font-size: 25px;
+        color: #C34716;
+        border-radius: 40px;
+        font-family: 'Boogaloo', cursive;
+        padding: 2%;
+    }
+
+    .CarouselImage {
+        width: 100vw;
+        height: auto;
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    .CarouselImage2 {
+        width: 100vw;
+        height: auto;
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    #SlideShow2 {
+        width: 100%;
+    }
+
+    #content {
+        order: -1;
+    }
+
+    #sidebarTestimony {
+        width: 97.5%
+    }
+
+    #background2 {
+        width: 50%;
+        height: auto;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #Carousel {
+        display: none;
+    }
+
+    #sidebar {
+        margin: 0;
+    }
+
+    #content {
+        padding: 0;
+    }
+
+    .mobileLeaf {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 17px;
+        background-color: #189395;
+        padding: 5% 0;
+        cursor: pointer;
+    }
+
+    .CarouselMobile {
+        width: 15vw;
+    }
+
+    #SlideShow {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+
+    #testimony {
+        margin-top: 40vw;
+        position: relative;
+
+    }
+
+    .mainNav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .logo {
+        float: left;
+    }
+}
+
+
+
+
+/*html{
+	font-family: VERDANA;
+	font-size: 1vw;
+	background-color: #151515;
+}
+
+body{
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+.book{
+	background: #f16624;
+	height: 3.75rem;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+}
+.boxed{
+	background: white;
+}
+							
+.book-button{
+	display: flex;
+	margin-top: .937rem;
+	content: center;
+	color: white;
+	font-size: 2rem;
+	padding-top: 2%;
+
+}
+
+
+.box {
+  width: 33.3333333%;
+
+}
+
+.box-logo{
+	align-content: center;
+	margin-left: 1;
+	padding-top: 5.5rem;
+	padding-bottom: 1.5rem;
+
+}
+
+.menu{
+	background:#f16624;
+	height: 3.125rem;
+	display: flex;
+	justify-content: center;
+}
+
+.menu-button{
+	color:white;
+	padding: 5rem;
+	font-size: .875rem;
+}
+
+
+.illustration{
+	width: 100%;
+}
+
+.homeillustration{
+	align-content: center;
+	width: 100%;
+    background-color: aliceblue;
+}
+
+.homephotos1 {
+	width: 33.33333333%;
+	margin-bottom: -4px;
+}
+
+.home-photos{
+	width: 100%;
+	display: inline-flex; 
+	align-items: center;
+}
+.contactinformation{
+color: #707070;
+font-size: 10pt;
+margin-top: 3.125rem;
+margin-bottom: 3.125rem;
+text-align: center;
+}
+.contactinfo2{
+margin-top: 0.625rem;
+}
+*/

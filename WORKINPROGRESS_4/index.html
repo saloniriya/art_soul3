@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Art & Soul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Mitr&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .CarouselImage {
+            display: none;
+
+    </style>
+
+</head>
+
+<body>
+    <!--beginning of menu and header-->
+    <main>
+        <div id="banner">
+            <a href="index.html" id="logo">
+                <div style="width: 100%; height: auto;"></div>
+            </a>
+            <header>UNPLUG &<br> UNLEASH</header>
+        </div>
+        <nav>
+            <div class="menu dropdown">
+                <!--Note both classes "menu" and "dropdown" are applied here-->
+                <a href="https://www.activityhero.com/widgets/schedule_with_photo?aht_cam=new-schedule-widget&aht_src=54220&classes=true&locations=115130,67239,86832,86833,66128,67391,109873,66127,53259&show_photos=true&show_schedules=published_upcoming,unpublished_upcoming&widget_id=806" target="_blank" class="topButton">REGISTRATION</a>
+            </div>
+
+            <div class="menu dropdown">
+                <a href="#mission" class="topButton">OUR PROGRAMS</a>
+                <div class="dropdown-content">
+                    <a href="OurProgramsSummerCamp.html">Summer Camp</a>
+                    <a href="#">Afterschool</a>
+                    <a href="#">Homeschool</a>
+                </div>
+            </div>
+            <div class="menu dropdown">
+                <a href="#mission" class="topButton">PARTIES & EVENTS</a>
+            </div>
+
+
+            <div class="menu dropdown">
+                <a href="#mission" class="topButton">ABOUT US</a>
+                <div class="dropdown-content">
+                    <a href="#">Our Mission & Our Team</a>
+                    <a href="https://www.activityhero.com/biz/art-and-soul/show_section?section_type=reviews" target="_blank">Customer Reviews</a>
+                </div>
+            </div>
+
+        </nav>
+        <!--end of menu and header-->
+        <div id="background">
+            <div id="SlideShow">
+                <img src="resources/Media/Photos/fallButtonRight.png" id="Carousel" onclick="plusDivs(1)">
+                <img src="resources/Media/Photos/austin-pacheco-FtL07GM9Q7Y-unsplash.jpg" class="CarouselImage">
+                <img src="resources/Media/Photos/denise-johnson-3DkouQeZjp4-unsplash.jpg" class="CarouselImage">
+                <img src="resources/Media/Photos/bernard-hermant-5zu86kyV_UY-unsplash.jpg" class="CarouselImage">
+                <img src="resources/Media/Photos/fallButtonLeft.png" id="Carousel" onclick="plusDivs(-1)"></div>
+            <div class="mobileLeaf">
+                <img src="resources/Media/Photos/fallButtonRight.png" class="CarouselMobile" onclick="plusDivs(1)">
+                <img src="resources/Media/Photos/fallButtonLeft.png" class="CarouselMobile" onclick="plusDivs(-1)">
+            </div>
+        </div>
+
+        <div id="testimony">
+            <p>"Best camp ever! I am so happy with the staff. They were such good role models to my little boy."</p>
+            <a href="https://www.activityhero.com/biz/art-and-soul/show_section?section_type=reviews" target="_blank"id="button">READ MORE REVIEWS!</a>
+        </div>
+
+        <div class="contactinformation">
+            <div><a style="color: white" href="mailto:artandsoul.paloalto@gmail.com?Subject=Hello" target="_top">artandsoul.paloalto@gmail.com</a></div>
+            <div class="contactinfo2">650.269.0423 | PALO ALTO, CA | 650.316.9208 </div>
+        </div>
+    </main>
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+
+
+        var x = document.getElementsByClassName("CarouselImage");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        };
+
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+
+</script>
+
+
+</html>

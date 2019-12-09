@@ -1,0 +1,112 @@
+html{
+	font-family: VERDANA;
+	background-color: #151515;
+	margin: 0;
+	padding: 0;
+	font-size: 1vw;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-weight: normal !important;
+}
+a{
+	text-decoration: none;
+}
+
+.book{
+background: #f16624;
+height: 3.75rem;
+display: flex;
+justify-content: center;
+position: fixed;
+width: 100%;
+}
+
+.book-button{
+	display: flex;
+	margin-top: .937rem;
+	content: center;
+	color: white;
+	font-size: 2rem;
+	padding-top: 2%;
+
+}
+
+
+.boxed{
+background: white;
+}
+
+.box {
+ width: 33.3333333%;
+}
+
+.box-logo{
+align-content: center;
+margin-left: 1%;
+padding-top: 5.5rem;
+padding-bottom: 1.5rem;
+
+}
+
+.menu{
+background:#f16624;
+height: 3.125rem;
+display: flex;
+justify-content: center;
+}
+
+.menu-button{
+color:white;
+margin: 0 5rem;
+font-size: .875rem;
+}
+
+.images{
+	display: flex;
+	justify-content: center;
+	background: white;
+	height: 80%;
+	width: 90%;
+	margin: 0 auto;
+	flex-direction: column;
+	margin-top: 0.9rem;
+	margin-bottom: 3.125rem;
+}
+.row{
+	display: flex;
+	justify-content: center;
+}
+.profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 4.375rem;
+	margin-right: 4.375rem;
+	margin-bottom: 0.9rem;
+	margin-top: 0.9rem;
+}
+.profileimage{
+	width: 80%;
+	height: auto;
+}
+.name{
+	font-size: 14pt;
+}
+.title{
+	font-size: 10pt;
+}
+.contactinformation{
+	color: #707070;
+	font-size: 10pt;
+	margin-bottom: 3.125rem;
+	text-align: center;
+}
+.contactinfo2{
+	margin-top: 0.625rem;
+}
